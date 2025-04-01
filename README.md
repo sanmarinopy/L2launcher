@@ -1,5 +1,7 @@
 # L2 Shin Launcher - Launcher
 
+DISCORD: https://discord.gg/42sf7CZ52n
+
 ## 🎯 Qué hace este proyecto
 
 El L2 Shin Launcher es una aplicación esencial para los jugadores del servidor L2 Shin que:
