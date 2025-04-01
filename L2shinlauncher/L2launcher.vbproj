@@ -1,0 +1,89 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <StartupObject>Sub Main</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\background.png" />
+    <None Remove="Resources\cerrar_hover.png" />
+    <None Remove="Resources\cerrar_normal.png" />
+    <None Remove="Resources\discord_hover.png" />
+    <None Remove="Resources\discord_normal.png" />
+    <None Remove="Resources\ig_hover.png" />
+    <None Remove="Resources\ig_normal.png" />
+    <None Remove="Resources\jugar_hover.png" />
+    <None Remove="Resources\jugar_normal.png" />
+    <None Remove="Resources\minimizar_hover.png" />
+    <None Remove="Resources\minimizar_normal.png" />
+    <None Remove="Resources\play_hover.png" />
+    <None Remove="Resources\play_normal.png" />
+    <None Remove="Resources\progressbar_hover.png" />
+    <None Remove="Resources\progressbar_normal.png" />
+    <None Remove="Resources\update_hover.png" />
+    <None Remove="Resources\update_normal.png" />
+    <None Remove="Resources\upgrade_hover.png" />
+    <None Remove="Resources\upgrade_normal.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\background.png" />
+    <EmbeddedResource Include="Resources\cerrar_hover.png" />
+    <EmbeddedResource Include="Resources\cerrar_normal.png" />
+    <EmbeddedResource Include="Resources\discord_hover.png" />
+    <EmbeddedResource Include="Resources\discord_normal.png" />
+    <EmbeddedResource Include="Resources\ig_hover.png" />
+    <EmbeddedResource Include="Resources\ig_normal.png" />
+    <EmbeddedResource Include="Resources\jugar_hover.png" />
+    <EmbeddedResource Include="Resources\jugar_normal.png" />
+    <EmbeddedResource Include="Resources\minimizar_hover.png" />
+    <EmbeddedResource Include="Resources\minimizar_normal.png" />
+    <EmbeddedResource Include="Resources\play_hover.png" />
+    <EmbeddedResource Include="Resources\play_normal.png" />
+    <EmbeddedResource Include="Resources\progressbar_hover.png" />
+    <EmbeddedResource Include="Resources\progressbar_normal.png" />
+    <EmbeddedResource Include="Resources\update_hover.png" />
+    <EmbeddedResource Include="Resources\update_normal.png" />
+    <EmbeddedResource Include="Resources\upgrade_hover.png" />
+    <EmbeddedResource Include="Resources\upgrade_normal.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="My Project\Application.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Update="My Project\Resources.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
